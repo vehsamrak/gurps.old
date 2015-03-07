@@ -1,3 +1,4 @@
-app:
-    resource: @AppBundle/Controller/
+rottenwood_gurps:
+    resource: "@RottenwoodGurpsBundle/Controller/"
     type:     annotation
+    prefix:   /
