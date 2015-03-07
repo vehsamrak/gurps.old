@@ -11,6 +11,20 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Person {
 
+    const TECHNICAL_LEVEL_STONE_AGE = 0;
+    const TECHNICAL_LEVEL_BRONZE_AGE = 1;
+    const TECHNICAL_LEVEL_IRON_AGE = 2;
+    const TECHNICAL_LEVEL_MEDIEVAL = 3;
+    const TECHNICAL_LEVEL_AGE_OF_SAIL = 4;
+    const TECHNICAL_LEVEL_INDUSTRIAL_REVOLUTION = 5;
+    const TECHNICAL_LEVEL_MECHANIZED_AGE = 6;
+    const TECHNICAL_LEVEL_NUCLEAR_AGE = 7;
+    const TECHNICAL_LEVEL_DIGITAL_AGE = 8;
+    const TECHNICAL_LEVEL_MICROTECH_AGE = 9;
+    const TECHNICAL_LEVEL_ROBOTIC_AGE = 10;
+    const TECHNICAL_LEVEL_AGE_OF_EXOTIC_MATTER = 11;
+    const TECHNICAL_LEVEL_SUPER_FUTURE = 12;
+
     /**
      * @var integer
      * @ORM\Column(name="id", type="integer")
