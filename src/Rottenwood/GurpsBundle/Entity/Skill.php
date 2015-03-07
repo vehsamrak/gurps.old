@@ -38,6 +38,24 @@ class Skill {
     private $name;
 
     /**
+     * @var string
+     * @ORM\Column(name="name_russian", type="string", length=255)
+     */
+    private $nameRussian;
+
+    /**
+     * @var string
+     * @ORM\Column(name="description", type="text")
+     */
+    private $description;
+
+    /**
+     * @var string
+     * @ORM\Column(name="modificators", type="text")
+     */
+    private $modificators;
+
+    /**
      * @var integer
      * @ORM\Column(name="attribute", type="integer")
      */
@@ -57,7 +75,7 @@ class Skill {
 
     /**
      * @var integer
-     * @ORM\Column(name="TL", type="integer")
+     * @ORM\Column(name="TL", type="integer", nullable=true)
      */
     private $TL;
 
@@ -87,6 +105,48 @@ class Skill {
      */
     public function getName() {
         return $this->name;
+    }
+
+    /**
+     * @return string
+     */
+    public function getNameRussian() {
+        return $this->nameRussian;
+    }
+
+    /**
+     * @param string $nameRussian
+     */
+    public function setNameRussian($nameRussian) {
+        $this->nameRussian = $nameRussian;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDescription() {
+        return $this->description;
+    }
+
+    /**
+     * @param string $description
+     */
+    public function setDescription($description) {
+        $this->description = $description;
+    }
+
+    /**
+     * @return string
+     */
+    public function getModificators() {
+        return $this->modificators;
+    }
+
+    /**
+     * @param string $modificators
+     */
+    public function setModificators($modificators) {
+        $this->modificators = $modificators;
     }
 
     /**
