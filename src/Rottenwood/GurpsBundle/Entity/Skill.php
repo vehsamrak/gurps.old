@@ -224,4 +224,24 @@ class Skill {
     public function getTL() {
         return $this->TL;
     }
+
+    public static function getAttributeNames() {
+        return [
+            self::ATTRIBUTE_ST   => 'Сила',
+            self::ATTRIBUTE_DX   => 'Ловкость',
+            self::ATTRIBUTE_IQ   => 'Интеллект',
+            self::ATTRIBUTE_HT   => 'Здоровье',
+            self::ATTRIBUTE_PER  => 'Внимание',
+            self::ATTRIBUTE_WILL => 'Воля',
+        ];
+    }
+
+    public static function getDifficultyNames() {
+        return [
+            self::DIFFICULTY_EASY      => 'Легкое',
+            self::DIFFICULTY_AVERAGE   => 'Среднее',
+            self::DIFFICULTY_HARD      => 'Трудное',
+            self::DIFFICULTY_VERY_HARD => 'Очень Трудное',
+        ];
+    }
 }
